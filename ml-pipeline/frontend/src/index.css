@@ -1,0 +1,33 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0D1117;
+  --card: #161B22;
+  --card2: #1C2230;
+  --border: #21262D;
+  --primary: #58A6FF;
+  --primary-dim: rgba(88,166,255,0.12);
+  --text: #E6EDF3;
+  --muted: #8B949E;
+  --success: #3FB950;
+  --warning: #D29922;
+  --danger: #F85149;
+  --radius: 10px;
+  --mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+button { cursor: pointer; font-family: inherit; }
+input, select { font-family: inherit; }
